@@ -21,6 +21,9 @@
   <delegateAnalysisEngine key="PrecisionAnnotator">
       <import name=".home.abhimank.git.hw3-abhimank.hw3-abhimank.src.main.resources.PrecisionAnnotator"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="scnlp-abhimank-client">
+      <import location="/home/abhimank/git/hw3-abhimank/hw3-abhimank/src/main/resources/scnlp-abhimank-client.xml"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>hw2-abhimank-aae</name>
@@ -35,7 +38,8 @@
         <node>NGramAnnotator</node>
       <node>QuestionAnnotator</node>
         <node>AnswerAnnotator</node>
-        <node>AnswerScoreAnnotator</node>
+        <node>scnlp-abhimank-client</node>
+      <node>AnswerScoreAnnotator</node>
       <node>PrecisionAnnotator</node>
       </fixedFlow>
     </flowConstraints>
