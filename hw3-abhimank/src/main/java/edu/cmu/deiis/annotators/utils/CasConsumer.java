@@ -69,19 +69,9 @@ public class CasConsumer extends CasConsumer_ImplBase {
    * Name of configuration parameter that must be set to the path of a directory into which the
    * output files will be written.
    */
-  public static final String PARAM_OUTPUTDIR = "OutputDirectory";
 
-  private File mOutputDir;
 
-  private int mDocNum;
 
-  public void initialize() throws ResourceInitializationException {
-    mDocNum = 0;
-    mOutputDir = new File((String) getConfigParameterValue(PARAM_OUTPUTDIR));
-    if (!mOutputDir.exists()) {
-      mOutputDir.mkdirs();
-    }
-  }
 
   /**
    * Processes the CasContainer which was populated by the TextAnalysisEngines. <br>
@@ -112,32 +102,6 @@ public class CasConsumer extends CasConsumer_ImplBase {
       
   }
 
-  /**
-   * Serialize a CAS to a file in XCAS format
-   * 
-   * @param aCas
-   *          CAS to serialize
-   * @param name
-   *          output file
-   * 
-   * @throws IOException
-   *           if an I/O failure occurs
-   * @throws SAXException
-   *           if an error occurs generating the XML text
-   */
-  private void writeXCas(CAS aCas, File name) throws IOException, SAXException {
-    FileOutputStream out = null;
 
-    try {
-      out = new FileOutputStream(name);
-      XCASSerializer ser = new XCASSerializer(aCas.getTypeSystem());
-      XMLSerializer xmlSer = new XMLSerializer(out, false);
-      ser.serialize(aCas, xmlSer.getContentHandler());
-    } finally {
-      if (out != null) {
-        out.close();
-      }
-    }
-  }
 
 }
