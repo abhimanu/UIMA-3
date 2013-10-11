@@ -1,0 +1,20 @@
+2013-10-11 02:12:50,825 [main           ] INFO  BrokerService                  - Using Persistence Adapter: MemoryPersistenceAdapter
+2013-10-11 02:12:50,827 [main           ] INFO  BrokerService                  - ActiveMQ 5.4.1 JMS Message Broker (localhost) is starting
+2013-10-11 02:12:50,827 [main           ] INFO  BrokerService                  - For help or more information please see: http://activemq.apache.org/
+2013-10-11 02:12:50,832 [JMX connector  ] INFO  ManagementContext              - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2013-10-11 02:12:50,994 [main           ] INFO  TransportServerThreadSupport   - Listening for connections at: tcp://cogito.ml.cmu.edu:61616
+2013-10-11 02:12:50,994 [main           ] INFO  TransportConnector             - Connector openwire Started
+2013-10-11 02:12:50,996 [main           ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-40964-1381471970843-0:0) started
+2013-10-11 02:13:26,557 [Thread-2       ] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-40964-1381471970843-0:0) is shutting down
+2013-10-11 02:13:26,557 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-40964-1381471970843-0:0) is shutting down
+2013-10-11 02:13:26,559 [MQ ShutdownHook] INFO  TransportConnector             - Connector openwire Stopped
+2013-10-11 02:13:26,608 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-40964-1381471970843-0:0) stopped
+2013-10-11 02:13:27,017 [Thread-2       ] INFO  TransportConnector             - Connector openwire Stopped
+2013-10-11 02:13:27,017 [Thread-2       ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-40964-1381471970843-0:0) stopped
+2013-10-11 02:15:45,784 [main           ] INFO  BrokerService                  - Using Persistence Adapter: MemoryPersistenceAdapter
+2013-10-11 02:15:45,786 [main           ] INFO  BrokerService                  - ActiveMQ 5.4.1 JMS Message Broker (localhost) is starting
+2013-10-11 02:15:45,786 [main           ] INFO  BrokerService                  - For help or more information please see: http://activemq.apache.org/
+2013-10-11 02:15:45,793 [JMX connector  ] INFO  ManagementContext              - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2013-10-11 02:15:45,944 [main           ] INFO  TransportServerThreadSupport   - Listening for connections at: tcp://cogito.ml.cmu.edu:61616
+2013-10-11 02:15:45,944 [main           ] INFO  TransportConnector             - Connector openwire Started
+2013-10-11 02:15:45,946 [main           ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-59664-1381472145800-0:0) started
