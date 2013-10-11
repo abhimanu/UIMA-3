@@ -44,6 +44,8 @@ public class AnswerScoreAnnotator extends JCasAnnotator_ImplBase {
     FSIndex questionIndex = jcas.getAnnotationIndex(Question.type);
     Iterator questionIter = questionIndex.iterator();
     
+    FSIndex annotationIndex = jcas.getAnnotationIndex(NamedEntityMention.type);
+    
 //    Vector<NGram> questionNgrams = new Vector<NGram>();
     Question ques = (Question) questionIter.next();
 

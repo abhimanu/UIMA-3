@@ -6,7 +6,7 @@
   <deployment protocol="jms" provider="activemq">
     <casPool numberOfCASes="1" initialFsHeapSize="2000000"/>
     <service>
-      <inputQueue endpoint="hw3QA" brokerURL="tcp://localhost:61616" prefetch="0"/>
+      <inputQueue endpoint="hw3QA" brokerURL="tcp://cogito.ml.cmu.edu:61616" prefetch="0"/>
       <topDescriptor>
 <import location="/home/abhimank/git/hw3-abhimank/hw3-abhimank/src/main/resources/hw2-abhimank-aae.xml"/>
       </topDescriptor>

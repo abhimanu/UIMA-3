@@ -27,5 +27,20 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uimaj-as-jms.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/hw3-abhimank-0.0.5-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/jVinci.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-adapter-soap.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-adapter-vinci.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-core.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-cpe.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-document-annotation.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-examples.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uimaj-as-activemq.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uimaj-as-camel.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uimaj-as-core.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uimaj-bootstrap.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/uima-tools.jar"/>
+	<classpathentry kind="lib" path="/home/abhimank/softwares/apache-uima-as-2.4.0/lib/xmlbeans.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
