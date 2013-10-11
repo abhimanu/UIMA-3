@@ -10,8 +10,8 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 /** 
- * Updated by JCasGen Wed Sep 11 13:44:28 EDT 2013
- * XML source: /home/diwang/ur-workspace/deiis-f13-homework/src/main/resources/desc/deiis_types.xml
+ * Updated by JCasGen Thu Oct 10 23:22:59 EDT 2013
+ * XML source: /home/abhimank/git/hw3-abhimank/hw3-abhimank/src/main/resources/descriptors/deiis_types.xml
  * @generated */
 public class AnswerScore extends Annotation {
   /** @generated

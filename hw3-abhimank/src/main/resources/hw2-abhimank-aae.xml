@@ -18,6 +18,9 @@
     <delegateAnalysisEngine key="AnswerScoreAnnotator">
       <import name="AnswerScoreAnnotator"/>
     </delegateAnalysisEngine>
+  <delegateAnalysisEngine key="PrecisionAnnotator">
+      <import name=".home.abhimank.git.hw3-abhimank.hw3-abhimank.src.main.resources.PrecisionAnnotator"/>
+    </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
     <name>hw2-abhimank-aae</name>
@@ -33,6 +36,7 @@
       <node>QuestionAnnotator</node>
         <node>AnswerAnnotator</node>
         <node>AnswerScoreAnnotator</node>
+      <node>PrecisionAnnotator</node>
       </fixedFlow>
     </flowConstraints>
     <typePriorities/>

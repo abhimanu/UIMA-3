@@ -1,6 +1,6 @@
 
 
-/* First created by JCasGen Wed Sep 11 13:44:28 EDT 2013 */
+/* First created by JCasGen Thu Oct 10 23:22:59 EDT 2013 */
 package edu.cmu.deiis.types;
 
 import org.apache.uima.jcas.JCas; 
@@ -9,16 +9,16 @@ import org.apache.uima.jcas.cas.TOP_Type;
 
 
 
-/** 
+/** Precision type
  * Updated by JCasGen Thu Oct 10 23:22:59 EDT 2013
  * XML source: /home/abhimank/git/hw3-abhimank/hw3-abhimank/src/main/resources/descriptors/deiis_types.xml
  * @generated */
-public class Answer extends Annotation {
+public class Precision extends Annotation {
   /** @generated
    * @ordered 
    */
   @SuppressWarnings ("hiding")
-  public final static int typeIndexID = JCasRegistry.register(Answer.class);
+  public final static int typeIndexID = JCasRegistry.register(Precision.class);
   /** @generated
    * @ordered 
    */
@@ -30,23 +30,23 @@ public class Answer extends Annotation {
  
   /** Never called.  Disable default constructor
    * @generated */
-  protected Answer() {/* intentionally empty block */}
+  protected Precision() {/* intentionally empty block */}
     
   /** Internal - constructor used by generator 
    * @generated */
-  public Answer(int addr, TOP_Type type) {
+  public Precision(int addr, TOP_Type type) {
     super(addr, type);
     readObject();
   }
   
   /** @generated */
-  public Answer(JCas jcas) {
+  public Precision(JCas jcas) {
     super(jcas);
     readObject();   
   } 
 
   /** @generated */  
-  public Answer(JCas jcas, int begin, int end) {
+  public Precision(JCas jcas, int begin, int end) {
     super(jcas);
     setBegin(begin);
     setEnd(end);
@@ -62,21 +62,21 @@ public class Answer extends Annotation {
  
     
   //*--------------*
-  //* Feature: isCorrect
+  //* Feature: precision
 
-  /** getter for isCorrect - gets 
+  /** getter for precision - gets Precision attribute
    * @generated */
-  public boolean getIsCorrect() {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.deiis.types.Answer");
-    return jcasType.ll_cas.ll_getBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect);}
+  public double getPrecision() {
+    if (Precision_Type.featOkTst && ((Precision_Type)jcasType).casFeat_precision == null)
+      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Precision");
+    return jcasType.ll_cas.ll_getDoubleValue(addr, ((Precision_Type)jcasType).casFeatCode_precision);}
     
-  /** setter for isCorrect - sets  
+  /** setter for precision - sets Precision attribute 
    * @generated */
-  public void setIsCorrect(boolean v) {
-    if (Answer_Type.featOkTst && ((Answer_Type)jcasType).casFeat_isCorrect == null)
-      jcasType.jcas.throwFeatMissing("isCorrect", "edu.cmu.deiis.types.Answer");
-    jcasType.ll_cas.ll_setBooleanValue(addr, ((Answer_Type)jcasType).casFeatCode_isCorrect, v);}    
+  public void setPrecision(double v) {
+    if (Precision_Type.featOkTst && ((Precision_Type)jcasType).casFeat_precision == null)
+      jcasType.jcas.throwFeatMissing("precision", "edu.cmu.deiis.types.Precision");
+    jcasType.ll_cas.ll_setDoubleValue(addr, ((Precision_Type)jcasType).casFeatCode_precision, v);}    
   }
 
     
