@@ -76,7 +76,7 @@
 		</dependency>
 	</dependencies>
 	<scm>
-  	<connection>scm:git:git@github.com:abhimanu/hw2-abhimank.git</connection>
-  	<developerConnection>scm:git:git@github.com:abhimanu/hw2-abhimank.git</developerConnection>
+  	<connection>scm:git:git@github.com:abhimanu/hw3-abhimank.git</connection>
+  	<developerConnection>scm:git:git@github.com:abhimanu/hw3-abhimank.git</developerConnection>
   </scm>
 </project>
