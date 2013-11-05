@@ -57,3 +57,22 @@
 2013-10-11 02:42:10,982 [main           ] INFO  TransportServerThreadSupport   - Listening for connections at: tcp://cogito.ml.cmu.edu:61616
 2013-10-11 02:42:10,982 [main           ] INFO  TransportConnector             - Connector openwire Started
 2013-10-11 02:42:10,985 [main           ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-33441-1381473730833-0:0) started
+2013-11-02 22:37:24,975 [Thread-2       ] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-33441-1381473730833-0:0) is shutting down
+2013-11-02 22:37:24,982 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-33441-1381473730833-0:0) is shutting down
+2013-11-02 22:37:25,099 [MQ ShutdownHook] INFO  TransportConnector             - Connector openwire Stopped
+2013-11-02 22:37:25,298 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-33441-1381473730833-0:0) stopped
+2013-11-02 22:37:25,459 [Thread-2       ] INFO  TransportConnector             - Connector openwire Stopped
+2013-11-02 22:37:25,460 [Thread-2       ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-33441-1381473730833-0:0) stopped
+2013-11-03 19:47:05,241 [main           ] INFO  BrokerService                  - Using Persistence Adapter: MemoryPersistenceAdapter
+2013-11-03 19:47:05,254 [main           ] INFO  BrokerService                  - ActiveMQ 5.4.1 JMS Message Broker (localhost) is starting
+2013-11-03 19:47:05,254 [main           ] INFO  BrokerService                  - For help or more information please see: http://activemq.apache.org/
+2013-11-03 19:47:05,345 [JMX connector  ] INFO  ManagementContext              - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2013-11-03 19:47:05,421 [main           ] INFO  TransportServerThreadSupport   - Listening for connections at: tcp://cogito.ml.cmu.edu:61616
+2013-11-03 19:47:05,422 [main           ] INFO  TransportConnector             - Connector openwire Started
+2013-11-03 19:47:05,424 [main           ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-42753-1383526025272-0:0) started
+2013-11-04 19:28:54,102 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-42753-1383526025272-0:0) is shutting down
+2013-11-04 19:28:54,102 [Thread-2       ] INFO  BrokerService                  - ActiveMQ Message Broker (localhost, ID:cogito.ml.cmu.edu-42753-1383526025272-0:0) is shutting down
+2013-11-04 19:28:54,106 [Thread-2       ] INFO  TransportConnector             - Connector openwire Stopped
+2013-11-04 19:28:54,113 [MQ ShutdownHook] INFO  TransportConnector             - Connector openwire Stopped
+2013-11-04 19:28:54,114 [MQ ShutdownHook] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-42753-1383526025272-0:0) stopped
+2013-11-04 19:28:54,116 [Thread-2       ] INFO  BrokerService                  - ActiveMQ JMS Message Broker (localhost, ID:cogito.ml.cmu.edu-42753-1383526025272-0:0) stopped
