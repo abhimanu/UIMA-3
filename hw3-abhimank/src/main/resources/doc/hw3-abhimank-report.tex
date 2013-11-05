@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Hw3 Documentation, LTI 11791}
+\author{Abhimanu Kumar \\ Andrew Id - ABHIMANK}
+\date
+%\usepackage{natbib}
+%\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\section{Task 1.}
+I did the following for task 1:
+\begin{itemize}
+
+\item A FileSystemCollectionReader.xml descriptor and its corressponding class  
+org.apache.uima.tools.components.FileSystemCollectionReader.java was written.
+\item A CasConsumer.xml was written and included in the pipeline.
+\item A CPE descriptor, hw3-abhimank-CPE.xml, was written.
+
+\end{itemize}
+All  of  the above were written under src/main/resources/.
+\section{Task 2.}
+I read the tutorials from Apache UIMA before doing this task 
+The basic concepts of UIMA-AS was read from the Apache UIMA documentation.
+
+I first create a UIMA-AS client descriptor xml scnlp-abhimank-client.xml. This is
+used to connnect remote Stanford-Core-NLP service. I then imported the 
+cleartk-stanfordcorenlp
+and uimaj-as-activemq dependencies to my hw3 maven project. Besides that, the client 
+was pointed to the appropriate broker URL and end point.
+Then I imported the type system of the remote cleartk service and named-entity to 
+strengthen the Answer Score annotator.
+
+Next I Combine Named Entity annotations from the remote service. The remote service 
+helps in annotating each word with the relevant named entity. The answer score
+annotator created computes an additional score by the named entities found in 
+the question and answer. The scoring scheme proceeds as :
+\begin{itemize}
+\item It counts the named entities and its types for 
+each question.
+\item 
+It counts only those named entities in the answer that are present in the 
+present  in the question as well.  
+\item Finally it normalizes the counts of named entities to obtain the final score.
+\\ 
+\\ 
+
+Named Entity Score vs N-gram score of HW2:
+
+The score in hw2 was based on n-gram overlaps.
+The new named-entity scores are based on name-entity overlaps. 
+The table below provides a comparison of the average precision of two documents in
+the two scoring systems:
+\begin{table}
+\begin{center}
+\begin{tabular}{c|c|c|}
+ & Doc 1 & Doc 2 \\ \hline
+N-gram Score  & 0.5 & 1  \\ \hline
+Named Entity Score & 0.5  & 0.66  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+We devise a final system which is a linear combination of the scores of the 2
+systems:
+\begin{equation}
+final~score = w*named\_entity\_score + (1-w)*n\_gram\_score
+\end{equation}
+
+For w=0.4 and w=0.6 gives us the following scores:
+
+\begin{table}
+\begin{center}
+\begin{tabular}{c|c|c|}
+ & Doc 1 & Doc 2 \\ \hline
+w=0.6  & 0.25 & 1  \\ \hline
+w=0.4 & 0.5  & 1  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+It appears from above that system works best when more weight is given to N-gram system.
+
+After this I deply UIMA-AS service in my laptop. 
+I wrote the relevant client and deployment descriptor xmls along with starting 
+the broker. I created the hw3-abhimank-aae-as-client CPE client for testing the 
+local service. I was able to run the CPE client and the generate the output.
+
+%\bibliographystyle{plain}
+%\bibliography{references}
+\end{document}
